@@ -5,4 +5,5 @@ RUN pwd
 RUN /bin/bash -c "mkdir node-app"
 EXPOSE 5000
 ENTRYPOINT "cd /node-app"
+ENTRYPOINT "ls -ltr"
 ENTRYPOINT "node test.js && node index.js"
