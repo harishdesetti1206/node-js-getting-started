@@ -13,6 +13,6 @@ RUN cd node-js-getting-started/
 RUN pwd
 EXPOSE 5000
 #ENTRYPOINT "node test.js && node index.js"
-ENTRYPOINT "npm i"
-ENTRYPOINT "npm test"
-ENTRYPOINT "npm start"
+#ENTRYPOINT "npm i"
+ENTRYPOINT "node test.js"
+ENTRYPOINT "node index.js"
