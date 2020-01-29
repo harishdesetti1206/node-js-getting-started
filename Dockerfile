@@ -9,8 +9,9 @@ RUN apt-get install maven -y
 RUN apt-get install git -y
 RUN apt-get install nodejs -y
 RUN git clone https://github.com/harishdesetti1206/node-js-getting-started.git
-RUN cd node-js-getting-started/
-RUN pwd
+RUN /bin/bash -c "cd node-js-getting-started/"
+#RUN cd node-js-getting-started/
+RUN /bin/bash -c "ls -ltr"
 EXPOSE 5000
 #ENTRYPOINT "node test.js && node index.js"
 #ENTRYPOINT "npm i"
