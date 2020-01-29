@@ -13,7 +13,8 @@ RUN /bin/bash -c "cd /node-js-getting-started"
 #RUN cd node-js-getting-started/
 RUN /bin/bash -c "ls -ltr"
 EXPOSE 5000
+ENTRYPOINT cd /node-js-getting-started && ls -ltr && npm i && node test.js && node index.js
 #ENTRYPOINT "node test.js && node index.js"
 #ENTRYPOINT "npm i"
-ENTRYPOINT cd /node-js-getting-started && node test.js
-ENTRYPOINT node index.js
+#ENTRYPOINT cd /node-js-getting-started && node test.js
+#ENTRYPOINT node index.js
