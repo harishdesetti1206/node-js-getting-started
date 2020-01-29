@@ -14,5 +14,5 @@ RUN pwd
 EXPOSE 5000
 #ENTRYPOINT "node test.js && node index.js"
 #ENTRYPOINT "npm i"
-ENTRYPOINT "node test.js"
-ENTRYPOINT "node index.js"
+ENTRYPOINT node test.js
+ENTRYPOINT node index.js
