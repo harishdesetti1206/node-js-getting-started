@@ -15,5 +15,5 @@ RUN /bin/bash -c "ls -ltr"
 EXPOSE 5000
 #ENTRYPOINT "node test.js && node index.js"
 #ENTRYPOINT "npm i"
-ENTRYPOINT node test.js
+ENTRYPOINT cd /node-js-getting-started && node test.js
 ENTRYPOINT node index.js
